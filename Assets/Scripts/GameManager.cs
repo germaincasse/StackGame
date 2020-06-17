@@ -156,7 +156,6 @@ public class GameManager : MonoBehaviour
         int index = (int)((float)(height + 1) / (float)steps) % colors.Count;
         int secondIndex = (index + 1) % colors.Count;
         float lerpValue = (float)((height + 1) % steps) / (float)steps;
-        text.text = "index: " + index + " sIndex: " + secondIndex + " lerp: " + lerpValue; 
         currentColor = Color.Lerp(colors[index], colors[secondIndex], lerpValue);
     }
 
